@@ -1,4 +1,186 @@
 body{
-    margin: 0.5em;
-    font-family: 
+    font-family: "Open Sans", sans-serif;;
+    margin: 0;
+    
 }
+
+.nav-bar{
+    width: 90%;
+    display: flex;
+
+    justify-content: space-between; 
+    margin: 10px;
+
+    position: absolute;
+    
+
+    nav{ 
+       position: fixed;
+       right: 0;
+       top: 0;
+       height: 100vh;
+       width: 50%;
+       background-color: rgb(201, 153, 82);
+       z-index: 999;
+       transform:translateX(100%);
+       transition: transform .5s ease-in-out;
+     ul{
+         list-style: none;
+         padding: 0;
+         margin-top: 8em;
+
+         a{
+            font-family: "Open Sans", sans-serif;
+            color: white;
+            padding: .75em 2em;
+            display: block;
+            width: 100%
+            
+          
+         }
+
+         a:hover{
+             background-color: black;
+         }
+     }
+
+     .close{
+         float: right;
+         margin:1.5em;
+         width:2em;
+     }
+    }
+
+    svg{
+        
+      width: 3em;
+      max-width: -.6em;
+      cursor: pointer;
+      background-color: transparent;
+    }
+}
+
+
+
+
+.hero-carousel-section{
+  width: 100%;
+  height: 50vh;
+  margin: 0%;
+  position: relative;
+
+  .slide-show-container{
+   
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    inset: 0;
+
+
+    .slide-show-element{
+          display: block;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+          inset: 0;
+         .carousel-img{
+          
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            
+            
+           }
+         
+           .carousel-title{
+            color: white;
+            position: absolute;
+            left: 5em;
+            bottom: 5em;
+            text-align:left;
+            text-decoration: underline;
+            font-family: "Open Sans", sans-serif;
+           }
+         .carousel-subtitle{
+            color: white;
+            position: absolute;
+            left: 6.2em;
+            bottom: 4em;
+            width: 50%;
+            text-align:left;
+            font-family: "Open Sans", sans-serif;
+            font-size:small;
+         }
+          
+
+           
+
+           
+    }
+
+    
+
+    .slide-show-element-1{
+
+        .carousel-img-1{
+            
+            background-image: url("../images/cameras.jpg");
+        }
+    }
+
+    .slide-show-element-2{
+      
+        .carousel-img-2{
+        
+            background-image: url("../images/security_guard.jpg");
+        }
+    }
+
+    .slide-show-element-3{
+    
+        .carousel-img-3{
+         
+            background-image: url("../images/earth.jpg");
+        }
+    }
+
+    .slide-show-element[data-active]{
+        opacity: 1;
+    }
+
+    .prev_button{
+        color: white;
+        position: absolute;
+        font-size:x-large;
+        left: .5em;
+        bottom: 5.6em;
+        cursor: pointer;
+
+    }
+
+
+    .next_button{
+        color: white;
+        position: absolute;
+        font-size:x-large;
+        right: .5em;
+        bottom: 5.6em;
+        cursor: pointer;
+    }
+
+
+}
+}
+
+
+a{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+
+
