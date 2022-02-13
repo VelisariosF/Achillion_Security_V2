@@ -1,19 +1,14 @@
-var slideIndex = 0;
+var myIndex = 0;
 showSlides();
 
 function showSlides() {
   var i;
-  var slides = document.getElementsByClassName("slide-show-element");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  var x = document.getElementsByClassName("slide-show-element");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.opacity = 0;  
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.opacity = 1;  
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
 }

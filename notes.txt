@@ -5,3 +5,7 @@
 
 
 1)fix the nav bar hover
+
+2) create image change animation
+
+3) fix the rectangles
