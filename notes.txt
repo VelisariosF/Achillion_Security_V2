@@ -14,7 +14,14 @@
 
 5) make service 2 flipped
 
+6) style the contact form button
 
+7)style the letter in the contact form
+8)adjust the height of the subject area in the contact form
+
+9) add columns to the grid of service
+
+10) fix the cotact form section from overflowing
 
 
 
