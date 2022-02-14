@@ -9,3 +9,18 @@
 2) create image change animation
 
 3) fix the rectangles
+
+4) fix the services section grid width (DONE)
+
+5) make service 2 flipped
+
+
+
+
+
+
+
+
+
+
+
