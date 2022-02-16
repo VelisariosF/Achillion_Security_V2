@@ -736,6 +736,9 @@ a{
    
 }
 
+
+
+/** WHY CHOOSE SECTION **/
 .why-choose-achillion-section{
    
     display: grid;
@@ -1008,4 +1011,389 @@ a{
             }
         }
     }
+}
+
+
+
+
+/** INFO SECTION **/
+
+
+.media-section{
+    
+   
+    display: grid;
+    grid-template-areas: "header"
+                
+                         "container"
+                         ;
+    padding-bottom: 30%;
+    justify-content: center;
+  
+   
+    max-width: 100%; 
+    padding-bottom: 2%;
+    margin: 0%;
+   
+   
+       
+    .media-section-main-title{
+           
+            grid-area: "header";
+            justify-self: center;
+            font-family: "Varela", sans-serif;
+            color: #196fc2;
+            width: auto;
+            height: 2em;
+            margin-bottom: 0em;
+        
+      }
+
+      
+
+        .media-container{
+            grid-auto-flow: row;
+            grid-area: "container";
+            display: grid;
+            grid-template-areas: "email_area"
+                                 "phone_area";
+            
+            justify-content: space-between;
+            max-height: 100%;
+            padding: 4%;
+            row-gap: 20%;
+            
+           
+        
+            .email-area{ 
+                grid-area: "email_area";
+                .email-logo{
+                    
+                    grid-column: 1 / 2;
+                   
+                }
+
+                .service_emai-address{
+                    align-self: center;
+                    grid-column: 2 / 4;
+                   
+                }
+
+               
+                
+             
+                
+            }
+
+            .phone-area{ 
+              
+                 grid-area: "phone_area";
+                .phone-logo{
+                  
+                    grid-column: 1 / 2;
+                }
+
+                .phone-number{
+                    align-self: center;
+                    grid-column: 2 / 4;
+                }
+
+               
+            
+                
+
+            }
+
+          
+           
+        }
+
+
+
+     
+     
+}
+
+
+
+.media-section
+.media-container
+.media-area{
+    
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    column-gap: 10%;
+    
+    width: 100%;
+    height: 100%;
+    .media-logo{
+        grid-column: 1 /2;
+        justify-self: center;
+       
+        width: fit-content;
+       
+       
+
+    .media-rectangle{
+        grid-column: 2 / 3;
+        display: inline-block;
+        background-color: rgb(255, 255, 255);
+        width: 1.8em;
+        height:  1.8em;
+        border: 0.05em solid #ffffff;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-box-shadow: 0.4em 0.4em 0px 0px #dddddd;
+        -o-box-shadow: 0.4em 0.4em 0px 0px #dddddd;
+        -moz-box-shadow: 0.4em 0.4em 0px 0px #dddddd;
+         box-shadow: 0.4em 0.4em 0px 0px #424242;
+      
+         .media_svg{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          font-size: 4em;
+          transform: translate(-50%, -50%) rotate(-45deg);
+          -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          -moz-transform: translate(-50%, -50%) rotate(-45deg);
+          -o-transform: translate(-50%, -50%) rotate(-45deg);
+          -ms-transform: translate(-50%, -50%) rotate(-45deg);
+         }
+      
+        
+     }
+    }
+
+    .media-title{
+        
+      
+        margin: 0;               
+       
+        font-family: 1em "Open Sans", sans-serif;
+           
+    }
+
+
+    
+
+
+   
+   
+
+}
+
+
+
+
+
+
+
+ /* Section: Social Networks */
+ .solocial-media-section {
+    background-color: #196fc2;;
+    max-width: 100%;
+    margin:0%;
+    text-align: center;
+    
+
+    Section: Social Networks */
+    .section-networks {
+        background-color: #196fc2;;
+        max-width: 100%;
+        margin:0%;
+        text-align: center;
+        
+    
+        .container{
+            border-top: 0.5px solid white;
+            border-bottom: 0.5px solid white;
+            margin-top: 80px;
+            max-width: 770px;
+            position: relative;
+            padding: 70px 15px;
+            text-align: center;
+            border-bottom: 1px solid #dddddd;
+        
+          a{
+            margin: 1.5%;
+            color: #ffffff;
+            box-shadow: none;
+            &:hover, &:focus{
+                background-color: #ffffff;
+                color: #196fc2;
+            }
+          }
+          
+        }
+      }
+      
+     
+      
+     
+      
+    
+    
+    
+     
+    
+    
+    
+      
+      .rectangle{
+        
+        display: inline-block;
+        background-color: #196fc2;
+        width: 3.5em;
+        height:  3.5em;
+        border: 0.05em solid #ffffff;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-box-shadow: 0.4em 0.4em 0px 0px #dddddd;
+        -o-box-shadow: 0.4em 0.4em 0px 0px #dddddd;
+        -moz-box-shadow: 0.4em 0.4em 0px 0px #dddddd;
+         box-shadow: 0.4em 0.4em 0px 0px #424242;
+         opacity: 1;
+     
+         i{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 1.2em;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+            -moz-transform: translate(-50%, -50%) rotate(-45deg);
+            -o-transform: translate(-50%, -50%) rotate(-45deg);
+            -ms-transform: translate(-50%, -50%) rotate(-45deg);
+         }
+    
+         &:hover{
+           
+                background-color: #ffffff;
+                color: #196fc2;
+                border-color: #196fc2;
+             
+         }
+    
+    
+    
+    
+      }
+    
+    
+  }
+  
+ 
+
+
+@media only screen and(min-width: 900px) {
+     
+
+/** WHY CHOOSE SECTION **/
+.why-choose-achillion-section{
+   
+
+   
+       
+      
+    
+
+    .reasons-container{
+        .timeline {
+            width: 660px;
+            margin: 0 auto;
+            margin-top: 20px;
+          }
+        
+          .timeline li:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+          }
+          
+          .timeline .hexa {
+            left: -28px;
+            right: auto;
+            top: 8px;
+          }
+        
+          .timeline .direction-l .hexa {
+            left: auto;
+            right: -28px;
+          }
+        
+          .direction-l {
+            position: relative;
+            width: 310px;
+            float: left;
+            text-align: right;
+          }
+        
+          .direction-r {
+            position: relative;
+            width: 310px;
+            float: right;
+            text-align: left;
+          }
+        
+          .flag-wrapper {
+            display: inline-block;
+          }
+          
+          .flag {
+            font-size: 18px;
+          }
+        
+          .direction-l .flag:after {
+            left: auto;
+            right: -16px;
+            top: 50%;
+            margin-top: -8px;
+            border: solid transparent;
+            border-left-color: rgb(254,254,254);
+            border-width: 8px;
+          }
+        
+          .direction-r .flag:after {
+            top: 50%;
+            margin-top: -8px;
+            border: solid transparent;
+            border-right-color: rgb(254,254,254);
+            border-width: 8px;
+            left: -8px;
+          }
+        
+          .time-wrapper {
+            display: inline;
+            vertical-align: middle;
+            margin: 0;
+          }
+        
+          .direction-l .time-wrapper {
+            float: left;
+          }
+        
+          .direction-r .time-wrapper {
+            float: right;
+          }
+        
+          .time {
+            padding: 5px 10px;
+          }
+        
+          .direction-r .desc {
+            margin: 1em 0 0 0.75em;
+          }
+    }
+
+
+ }
+
 }

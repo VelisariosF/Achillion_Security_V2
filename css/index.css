@@ -779,6 +779,7 @@ a {
   border-bottom: 0.5px solid #666;
 }
 
+/** WHY CHOOSE SECTION **/
 .why-choose-achillion-section {
   display: -ms-grid;
   display: grid;
@@ -1036,5 +1037,252 @@ a {
 
 .section-about-us .about-us-container .about_us_link:hover {
   color: #196fc2;
+}
+
+/** INFO SECTION **/
+.media-section {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header"  "container";
+  padding-bottom: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+  padding-bottom: 2%;
+  margin: 0%;
+}
+
+.media-section .media-section-main-title {
+  grid-area: "header";
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-family: "Varela", sans-serif;
+  color: #196fc2;
+  width: auto;
+  height: 2em;
+  margin-bottom: 0em;
+}
+
+.media-section .media-container {
+  grid-auto-flow: row;
+  grid-area: "container";
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "email_area" "phone_area";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 100%;
+  padding: 4%;
+  row-gap: 20%;
+}
+
+.media-section .media-container .email-area {
+  grid-area: "email_area";
+}
+
+.media-section .media-container .email-area .email-logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.media-section .media-container .email-area .service_emai-address {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+}
+
+.media-section .media-container .phone-area {
+  grid-area: "phone_area";
+}
+
+.media-section .media-container .phone-area .phone-logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.media-section .media-container .phone-area .phone-number {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+}
+
+.media-section
+.media-container
+.media-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 40% 40%;
+      grid-template-columns: 20% 40% 40%;
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.media-section
+.media-container
+.media-area .media-logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 /2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.media-section
+.media-container
+.media-area .media-logo .media-rectangle {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  display: inline-block;
+  background-color: white;
+  width: 1.8em;
+  height: 1.8em;
+  border: 0.05em solid #ffffff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-box-shadow: 0.4em 0.4em 0px 0px #dddddd;
+  -o-box-shadow: 0.4em 0.4em 0px 0px #dddddd;
+  box-shadow: 0.4em 0.4em 0px 0px #424242;
+}
+
+.media-section
+.media-container
+.media-area .media-logo .media-rectangle .media_svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 4em;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -moz-transform: translate(-50%, -50%) rotate(-45deg);
+  -o-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.media-section
+.media-container
+.media-area .media-title {
+  margin: 0;
+  font-family: 1em "Open Sans", sans-serif;
+}
+
+/* Section: Social Networks */
+.solocial-media-section {
+  background-color: #196fc2;
+  max-width: 100%;
+  margin: 0%;
+  text-align: center;
+}
+
+.solocial-media-section .social-container {
+  border-top: 0.5px solid white;
+  border-bottom: 0.5px solid white;
+}
+
+.solocial-media-section .social-container a {
+  margin: 1.5%;
+  color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.solocial-media-section .social-container a:hover, .solocial-media-section .social-container a:focus {
+  background-color: #ffffff;
+  color: #196fc2;
+}
+
+@media only screen and (min-width: 900px) {
+  /** WHY CHOOSE SECTION **/
+  .why-choose-achillion-section .reasons-container .timeline {
+    width: 660px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .why-choose-achillion-section .reasons-container .timeline li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  .why-choose-achillion-section .reasons-container .timeline .hexa {
+    left: -28px;
+    right: auto;
+    top: 8px;
+  }
+  .why-choose-achillion-section .reasons-container .timeline .direction-l .hexa {
+    left: auto;
+    right: -28px;
+  }
+  .why-choose-achillion-section .reasons-container .direction-l {
+    position: relative;
+    width: 310px;
+    float: left;
+    text-align: right;
+  }
+  .why-choose-achillion-section .reasons-container .direction-r {
+    position: relative;
+    width: 310px;
+    float: right;
+    text-align: left;
+  }
+  .why-choose-achillion-section .reasons-container .flag-wrapper {
+    display: inline-block;
+  }
+  .why-choose-achillion-section .reasons-container .flag {
+    font-size: 18px;
+  }
+  .why-choose-achillion-section .reasons-container .direction-l .flag:after {
+    left: auto;
+    right: -16px;
+    top: 50%;
+    margin-top: -8px;
+    border: solid transparent;
+    border-left-color: #fefefe;
+    border-width: 8px;
+  }
+  .why-choose-achillion-section .reasons-container .direction-r .flag:after {
+    top: 50%;
+    margin-top: -8px;
+    border: solid transparent;
+    border-right-color: #fefefe;
+    border-width: 8px;
+    left: -8px;
+  }
+  .why-choose-achillion-section .reasons-container .time-wrapper {
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+  }
+  .why-choose-achillion-section .reasons-container .direction-l .time-wrapper {
+    float: left;
+  }
+  .why-choose-achillion-section .reasons-container .direction-r .time-wrapper {
+    float: right;
+  }
+  .why-choose-achillion-section .reasons-container .time {
+    padding: 5px 10px;
+  }
+  .why-choose-achillion-section .reasons-container .direction-r .desc {
+    margin: 1em 0 0 0.75em;
+  }
 }
 /*# sourceMappingURL=index.css.map */
