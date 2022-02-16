@@ -1190,23 +1190,72 @@ a {
   max-width: 100%;
   margin: 0%;
   text-align: center;
+  /* Social Networks */
 }
 
-.solocial-media-section .social-container {
+.solocial-media-section .section-networks {
+  background-color: #196fc2;
+  max-width: 100%;
+  margin: 0%;
+  text-align: center;
+}
+
+.solocial-media-section .section-networks .container {
   border-top: 0.5px solid white;
   border-bottom: 0.5px solid white;
+  margin-top: 80px;
+  max-width: 770px;
+  position: relative;
+  padding: 70px 15px;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
 }
 
-.solocial-media-section .social-container a {
+.solocial-media-section .section-networks .container a {
   margin: 1.5%;
   color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.solocial-media-section .social-container a:hover, .solocial-media-section .social-container a:focus {
+.solocial-media-section .section-networks .container a:hover, .solocial-media-section .section-networks .container a:focus {
   background-color: #ffffff;
   color: #196fc2;
+}
+
+.solocial-media-section .rectangle {
+  display: inline-block;
+  background-color: #196fc2;
+  width: 3.5em;
+  height: 3.5em;
+  border: 0.05em solid #ffffff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-box-shadow: 0.4em 0.4em 0px 0px #dddddd;
+  -o-box-shadow: 0.4em 0.4em 0px 0px #dddddd;
+  box-shadow: 0.4em 0.4em 0px 0px #424242;
+  opacity: 1;
+}
+
+.solocial-media-section .rectangle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.2em;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -moz-transform: translate(-50%, -50%) rotate(-45deg);
+  -o-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.solocial-media-section .rectangle:hover {
+  background-color: #ffffff;
+  color: #196fc2;
+  border-color: #196fc2;
 }
 
 @media only screen and (min-width: 900px) {
