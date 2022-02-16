@@ -24,10 +24,7 @@
 10) fix the cotact form section from overflowing
 
 
-
-
-
-
+ 
 
 
 
