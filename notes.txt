@@ -27,4 +27,6 @@
 11) fix social networks container 
 
 
+12) adjust the contact form desktop 
+
 
