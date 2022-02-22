@@ -7,16 +7,21 @@ body {
 }
 
 .nav-bar {
-  width: 90%;
+  background-color: #196fc2;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  padding: 1rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 10px;
   z-index: 999;
-  position: absolute;
+  position: fixed;
 }
 
 .nav-bar .logo {
@@ -33,7 +38,7 @@ body {
   right: 0;
   top: 0;
   height: 100vh;
-  width: 50%;
+  width: 60%;
   background-color: #196fc2;
   -webkit-transition: -webkit-transform .5s ease-in-out;
   transition: -webkit-transform .5s ease-in-out;
@@ -53,11 +58,12 @@ body {
   padding: .75em 2em;
   display: block;
   width: 100%;
-  -webkit-transition: color 0.5s ease-out;
+  font-size: 1em;
+  -webkit-transition: color 0.4s ease-out;
 }
 
 .nav-bar nav ul a:hover {
-  color: #196fc2;
+  color: #000000;
 }
 
 .nav-bar nav svg.close {
@@ -70,6 +76,7 @@ body {
   width: 3em;
   max-width: -.6em;
   cursor: pointer;
+  padding-right: 1.8em;
   background-color: transparent;
 }
 
@@ -103,8 +110,11 @@ body {
   background-attachment: fixed;
   width: 100%;
   height: 100%;
-  -webkit-animation: imageShowUp 2s forwards;
-          animation: imageShowUp 2s forwards;
+  /*   animation-name: fade;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-direction: alternate;*/
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element .carousel-title {
@@ -115,6 +125,8 @@ body {
   text-align: left;
   text-decoration: underline;
   font-family: "Open Sans", sans-serif;
+  -webkit-animation: introload 1s forwards;
+          animation: introload 1s forwards;
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element .carousel-subtitle {
@@ -127,25 +139,25 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: small;
   opacity: 0;
-  -webkit-animation: titleShowUp 0.5s ease-in-out forwards;
-          animation: titleShowUp 0.5s ease-in-out forwards;
+  -webkit-animation: introload 1s ease-in-out forwards;
+          animation: introload 1s ease-in-out forwards;
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element-1 .carousel-img-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/cameras.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cameras.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/cameras.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/cameras.jpg");
   background-size: cover;
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element-2 .carousel-img-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/security_guard.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/security_guard.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/security_guard.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/security_guard.jpg");
   background-size: cover;
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element-3 .carousel-img-3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/earth.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/earth.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/earth.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/earth.jpg");
   background-size: cover;
 }
 
@@ -476,12 +488,12 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   max-width: 100%;
-  height: auto;
+  height: 100%;
   gap: 2em;
 }
 
@@ -874,8 +886,8 @@ a {
   height: 50vh;
   margin: 0%;
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/about_us.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/about_us.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/about_us.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/about_us.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -1062,7 +1074,8 @@ a {
 .media-container
 .media-area .media-title {
   margin: 0;
-  font-family: 1em "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: .6em;
 }
 
 /* Section: Social Networks */
@@ -1233,6 +1246,14 @@ a {
 }
 
 @media only screen and (min-width: 900px) {
+  .nav-bar {
+    width: 100%;
+    background-color: #196fc2;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    padding: 1rem;
+  }
   .nav-bar nav {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -1241,6 +1262,7 @@ a {
     width: auto;
     height: auto;
     background: none;
+    padding-right: 1rem;
   }
   .nav-bar nav svg.close {
     display: none;
@@ -1369,7 +1391,37 @@ a {
   }
 }
 
-@-webkit-keyframes titleShowUp {
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes introload {
   from {
     -webkit-transform: translateY(-100px);
             transform: translateY(-100px);
@@ -1381,7 +1433,7 @@ a {
   }
 }
 
-@keyframes titleShowUp {
+@keyframes introload {
   from {
     -webkit-transform: translateY(-100px);
             transform: translateY(-100px);
@@ -1393,25 +1445,59 @@ a {
   }
 }
 
-@-webkit-keyframes imageShowUp {
-  from {
-    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
-  to {
-    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-            clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  15% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
-@keyframes imageShowUp {
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  15% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+@-webkit-keyframes mymove {
   from {
-    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    left: 0px;
   }
   to {
-    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-            clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    left: 200px;
+  }
+}
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 200px;
   }
 }
 /*# sourceMappingURL=index.css.map */
