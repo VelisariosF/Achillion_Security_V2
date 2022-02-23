@@ -1,1 +1,123 @@
-.sect
+.section-our-company{
+      
+    display: grid;
+    grid-template-areas: "header"
+                         "subtitle"
+                         "description-container"
+                         ;
+    padding-bottom: 30%;
+    justify-content: center;
+    border-bottom: 1px solid #dddddd;
+
+    max-width: 100%; 
+    padding-bottom: 2%;
+    margin: 0%;
+    .section-our-company-main-title{
+        grid-area: "header";
+        justify-self: center;
+        font-family: "Varela", sans-serif;
+        color: #196fc2;
+        width: auto;
+        height: 2em;
+        margin-bottom: 0em;
+        
+    }
+
+    .section-our-company-subtitle{
+        grid-area: "subtitle";
+        margin-top: 0em;
+        font-family: "Varela", sans-serif;
+        justify-self: center;
+        color: #666;
+        letter-spacing: 0.3em;
+
+        width: auto;
+        height: 2em;
+
+
+    }
+
+
+    .section-our-company-description-container{
+        grid-area: "description-container";
+            
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        row-gap: 1em;
+        max-height: 100%;
+        padding: 4%;
+
+      
+
+       .element-1{
+        
+           .element-img-1{
+
+            grid-column: 2 / 3;
+            background-image: url("/images/about_us.jpg");
+            background-size: cover;
+        
+            }
+
+            .element-description-1{
+                grid-column: 1 / 2;
+            }
+
+
+       
+           
+       }
+
+
+       .element-2{
+    
+        .element-img-2{
+         background-image: url("/images/about_us.jpg");
+         background-size: cover;
+         
+        }
+        .element-description-1{
+            grid-column: 1 / 2;
+        }
+     
+        
+        }
+
+    }
+}
+
+
+.section-our-company.section-our-company-description-container
+element{
+    grid-auto-flow: row;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    height: 50vh;
+    row-gap: 2em;
+  
+    padding: 4%;
+
+    .element-img{
+      
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .element-description{
+       
+        width: 80%; 
+        margin: 0;
+
+ 
+     font-size: small;
+     text-align: left;
+    }
+
+
+}
