@@ -24,9 +24,32 @@ Eπίβλεψη Eκδηλώσεων
 10) fix the cotact form section from overflowing
 
 
+
+
+αρχικη σελιδα σταθερο κειμενο
+
+
+
+
 11) fix social networks container 
 
 
 12) adjust the contact form desktop 
 
 13) fix the width of the contac section menu
+
+
+δομη 
+=======
+1ο γιατι να μας επιλεξετε
+
+2ο υπηρεσιες 
+
+στα social oxi ρομβους
+
+social χρωμα ασημι
+
+top button: τα βελακια χρυσα
+
+γενικα τα μπλε να ειναι ασημι
+μαυρο στα γραμματα

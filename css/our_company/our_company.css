@@ -44,7 +44,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 90%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -58,7 +58,7 @@
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
   background-image: url("/images/about_us.jpg");
-  background-size: cover;
+  background-size: contain;
 }
 
 .section-our-company .section-our-company-description-container .element-1 .element-description-1 {
@@ -68,8 +68,11 @@
 }
 
 .section-our-company .section-our-company-description-container .element-2 .element-img-2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
   background-image: url("/images/about_us.jpg");
-  background-size: cover;
+  background-size: contain;
 }
 
 .section-our-company .section-our-company-description-container .element-2 .element-description-1 {
@@ -79,29 +82,29 @@
 }
 
 .section-our-company.section-our-company-description-container
-element {
-  grid-auto-flow: row;
+.element {
+  grid-auto-flow: column;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
-  width: 100%;
+  max-width: 100%;
   height: 50vh;
   row-gap: 2em;
   padding: 4%;
 }
 
 .section-our-company.section-our-company-description-container
-element .element-img {
+.element .element-img {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 
 .section-our-company.section-our-company-description-container
-element .element-description {
+.element .element-description {
   width: 80%;
   margin: 0;
   font-size: small;

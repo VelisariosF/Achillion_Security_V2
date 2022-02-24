@@ -7,7 +7,7 @@ body {
 }
 
 .nav-bar {
-  background-color: #196fc2;
+  background-color: #666;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,7 +39,7 @@ body {
   top: 0;
   height: 100vh;
   width: 60%;
-  background-color: #196fc2;
+  background-color: #666;
   -webkit-transition: -webkit-transform .5s ease-in-out;
   transition: -webkit-transform .5s ease-in-out;
   transition: transform .5s ease-in-out;
@@ -191,6 +191,7 @@ a {
 }
 
 .services-section {
+  border-top: 1px solid #dddddd;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "header" "subtitle" "description-container";
@@ -198,10 +199,10 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: 1px solid #dddddd;
   max-width: 100%;
   padding-bottom: 2%;
   margin: 0%;
+  padding-top: 4.7em;
 }
 
 .services-section .services-section-main-title {
@@ -209,7 +210,7 @@ a {
   -ms-grid-column-align: center;
       justify-self: center;
   font-family: "Varela", sans-serif;
-  color: #196fc2;
+  color: #666;
   width: auto;
   height: 2em;
   margin-bottom: 0em;
@@ -454,7 +455,7 @@ a {
   -ms-grid-column-align: center;
       justify-self: center;
   font-family: "Varela", sans-serif;
-  color: #196fc2;
+  color: #666;
   width: 100;
   height: 2em;
   margin-bottom: 0em;
@@ -511,7 +512,7 @@ a {
 .contact-section .contact-form-container .row .form-attribute .form-input {
   width: 98.5%;
   border: none;
-  border-bottom: 1px  solid #196fc2;
+  border-bottom: 1px  solid #666;
 }
 
 .contact-section .contact-form-container .row .form-attribute .form-input:focus {
@@ -538,12 +539,16 @@ a {
   font-family: "Varela", sans-serif;
 }
 
+.contact-section .contact-form-container .row_3 {
+  width: 220%;
+}
+
 .contact-section .contact-form-container .row_3 .form-subject .form-input-subject {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
   resize: none;
-  border-bottom: 1px  solid #196fc2;
+  border-bottom: 1px  solid #666;
   width: 100%;
   height: auto;
 }
@@ -577,7 +582,7 @@ a {
 }
 
 .contact-section .contact-form-container .row_3 .form-submit .input-submit {
-  background-color: #196fc2;
+  background-color: #666;
   -webkit-transition: background-color 0.2s ease-out;
   border: none;
   width: 100%;
@@ -613,7 +618,7 @@ a {
       justify-self: center;
   grid-area: "header";
   font-family: "Varela", sans-serif;
-  color: #196fc2;
+  color: #666;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -688,7 +693,7 @@ a {
   -ms-grid-column-align: center;
       justify-self: center;
   font-family: "Varela", sans-serif;
-  color: #196fc2;
+  color: #666;
   width: auto;
   height: 2em;
   margin-bottom: 0em;
@@ -705,8 +710,8 @@ a {
   height: 35px;
   width: 60px;
   font-size: 22px;
-  background: #f0f0f0;
-  color: #3c3c3c;
+  background: #FFD700;
+  color: #FFD700;
   position: relative;
   margin-top: 15px;
 }
@@ -766,7 +771,7 @@ a {
   width: 16px;
   height: 10px;
   position: absolute;
-  background: #196fc2;
+  background: #FFD700;
   z-index: 5;
   left: 0;
   right: 0;
@@ -777,7 +782,7 @@ a {
 }
 
 .why-choose-achillion-section .reasons-container .timeline .hexa:before {
-  border-bottom: 4px solid #196fc2;
+  border-bottom: 4px solid	#FFD700;
   border-left-width: 8px;
   border-right-width: 8px;
   top: -4px;
@@ -786,7 +791,7 @@ a {
 .why-choose-achillion-section .reasons-container .timeline .hexa:after {
   border-left-width: 8px;
   border-right-width: 8px;
-  border-top: 4px solid #196fc2;
+  border-top: 4px solid 	#FFD700;
   bottom: -4px;
 }
 
@@ -857,7 +862,7 @@ a {
 }
 
 .why-choose-achillion-section .reasons-container .time {
-  background: #196fc2;
+  background: #FFD700;
   display: inline-block;
   padding: 8px;
 }
@@ -929,7 +934,7 @@ a {
 }
 
 .section-about-us .about-us-container .about_us_link:hover {
-  color: #196fc2;
+  color: #666;
 }
 
 /** INFO SECTION **/
@@ -951,7 +956,7 @@ a {
   -ms-grid-column-align: center;
       justify-self: center;
   font-family: "Varela", sans-serif;
-  color: #196fc2;
+  color: #666;
   width: auto;
   height: 2em;
   margin-bottom: 0em;
@@ -962,7 +967,7 @@ a {
   grid-area: "container";
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "email_area" "phone_area";
+      grid-template-areas: "email_area" "phone_area" "location_area";
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1001,6 +1006,25 @@ a {
 }
 
 .media-section .media-container .phone-area .phone-number {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+}
+
+.media-section .media-container .location-area {
+  grid-area: "place_area";
+}
+
+.media-section .media-container .location-area .location-logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.media-section .media-container .location-area .location-title {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1082,7 +1106,7 @@ a {
 /* Section: Social Networks */
 .section-networks {
   position: relative;
-  background-color: #196fc2;
+  background-color: #666;
   max-width: 100%;
   margin: 0%;
   text-align: center;
@@ -1098,7 +1122,6 @@ a {
 
 .section-networks .social-container .social-rectangle {
   display: inline-block;
-  background-color: #196fc2;
   width: 3em;
   height: 3em;
   border: 0.05em solid #ffffff;
@@ -1114,6 +1137,7 @@ a {
   margin-top: 2.3em;
   margin-left: .5em;
   margin-right: .5em;
+  border: none;
   color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1133,9 +1157,9 @@ a {
 }
 
 .section-networks .social-container .social-rectangle:hover {
-  background-color: #ffffff;
-  color: #196fc2;
-  border-color: #196fc2;
+  background-color: none;
+  color: #666;
+  border-color: #666;
 }
 
 /* FOOTER
@@ -1174,7 +1198,7 @@ a {
 }
 
 .site-footer .container-fluid .list-unstyled li a:hover {
-  color: #196fc2;
+  color: #666;
 }
 
 .site-footer .container-fluid .top-button .top-rectangle {
@@ -1189,14 +1213,14 @@ a {
   height: 40px;
   background-color: #000;
   border: none;
-  color: #ffffff;
+  color: #FFD700;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transition: background-color 0.2s ease-out;
 }
 
 .site-footer .container-fluid .top-button .top-rectangle:hover {
-  background-color: #196fc2;
+  background-color: #666;
   color: #ffffff;
 }
 
@@ -1232,7 +1256,7 @@ a {
 }
 
 .site-footer .container-copyright .copyright a:hover {
-  color: #196fc2;
+  color: #666;
 }
 
 .close-nav {
@@ -1248,7 +1272,7 @@ a {
 @media only screen and (min-width: 900px) {
   .nav-bar {
     width: 100%;
-    background-color: #196fc2;
+    background-color: #666;
     top: 0%;
     left: 0%;
     right: 0%;

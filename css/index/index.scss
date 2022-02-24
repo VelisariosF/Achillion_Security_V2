@@ -15,7 +15,7 @@ body{
 
  
 .nav-bar{
-  background-color: #196fc2;
+  background-color: #666;;
   width: 100%;
   display: flex;
   margin: 0%;
@@ -45,7 +45,7 @@ body{
      top: 0;
      height: 100vh;
      width: 60%;
-     background-color: #196fc2;
+     background-color: #666;
     
      //transform:translateX(100%);
      transition: transform .5s ease-in-out;
@@ -235,7 +235,7 @@ a{
 
 
 .services-section{
-   
+  border-top: 1px solid #dddddd;
     display: grid;
     grid-template-areas: "header"
                          "subtitle"
@@ -243,11 +243,12 @@ a{
                          ;
     padding-bottom: 30%;
     justify-content: center;
-    border-bottom: 1px solid #dddddd;
+  //  border-bottom: 1px solid #dddddd;
 
     max-width: 100%; 
     padding-bottom: 2%;
     margin: 0%;
+    padding-top: 4.7em;
    
    
        
@@ -256,7 +257,7 @@ a{
             grid-area: "header";
             justify-self: center;
             font-family: "Varela", sans-serif;
-            color: #196fc2;
+            color: #666;
             width: auto;
             height: 2em;
             margin-bottom: 0em;
@@ -508,7 +509,7 @@ a{
         grid-row: 1 / 2;
         justify-self: center;
         font-family: "Varela", sans-serif;
-        color: #196fc2;
+        color: #666;
         width: 100;
         height: 2em;
         margin-bottom: 0em;
@@ -559,7 +560,7 @@ a{
               
               width: 98.5%;
               border: none;
-              border-bottom: 1px  solid #196fc2;
+              border-bottom: 1px  solid #666;
               &:focus{
                   outline: 0;
               }
@@ -577,7 +578,7 @@ a{
         
        .row_3{
         
-         
+         width: 220%;
         .form-subject{
          
             
@@ -586,7 +587,7 @@ a{
                 box-sizing: border-box;
                 border: none;
                 resize: none;
-                border-bottom: 1px  solid #196fc2;
+                border-bottom: 1px  solid #666;
                 width: 100%;
                 height: auto;
              
@@ -608,7 +609,7 @@ a{
             
             .input-submit{
     
-                background-color: #196fc2 ;
+                background-color: #666 ;
                 -webkit-transition: background-color 0.2s ease-out;
                 border: none;
                 width: 100%;
@@ -663,13 +664,14 @@ a{
       //  grid-row:1 / 2;
         grid-area: "header";
         font-family: "Varela", sans-serif;
-        color: #196fc2;
+        color: #666;
         height: fit-content;
         padding: 0%;
         margin: 0%;
        
        
     }
+
     .info-section-container-posts{
         
        // grid-row: 2 / 3;
@@ -758,7 +760,7 @@ a{
         grid-area: "header";
         justify-self: center;
         font-family: "Varela", sans-serif;
-        color: #196fc2;
+        color: #666;
         width: auto;
         height: 2em;
         margin-bottom: 0em;
@@ -776,8 +778,8 @@ a{
             height: 35px;
             width: 60px;
             font-size: 22px;
-            background: #f0f0f0;
-            color: #3c3c3c;
+            background: #FFD700;
+            color: #FFD700;
             position: relative;
             margin-top: 15px;
           }
@@ -841,7 +843,7 @@ a{
             width: 16px;
             height: 10px;
             position: absolute;
-            background: #196fc2 ;
+            background: 	#FFD700 ;
             z-index: 5;
             left: 0;
             right: 0;
@@ -852,7 +854,7 @@ a{
           }
           
           .timeline .hexa:before {
-            border-bottom: 4px solid #196fc2 ;
+            border-bottom: 4px solid	#FFD700 ;
             border-left-width: 8px;
             border-right-width: 8px;
             top: -4px;
@@ -861,7 +863,7 @@ a{
           .timeline .hexa:after {
             border-left-width: 8px;
             border-right-width: 8px;
-            border-top: 4px solid #196fc2 ;
+            border-top: 4px solid 	#FFD700 ;
             bottom: -4px;
           }
           
@@ -934,7 +936,7 @@ a{
           }
           
           .time {
-            background: #196fc2 ;
+            background: #FFD700 ;
             display: inline-block;
             padding: 8px;
           }
@@ -1009,7 +1011,7 @@ a{
             -webkit-transition: color 0.2s ease-out;
            
             &:hover{
-                color: #196fc2;
+                color: #666;
                 
             }
         }
@@ -1045,7 +1047,7 @@ a{
             grid-area: "header";
             justify-self: center;
             font-family: "Varela", sans-serif;
-            color: #196fc2;
+            color: #666;
             width: auto;
             height: 2em;
             margin-bottom: 0em;
@@ -1059,7 +1061,8 @@ a{
             grid-area: "container";
             display: grid;
             grid-template-areas: "email_area"
-                                 "phone_area";
+                                 "phone_area"
+                                 "location_area";
             
             justify-content: space-between;
             max-height: 100%;
@@ -1102,12 +1105,21 @@ a{
                     align-self: center;
                     grid-column: 2 / 4;
                 }
+              }
 
-               
-            
-                
+              .location-area{
+                grid-area: "place_area";
 
-            }
+                .location-logo{
+                  
+                  grid-column: 1 / 2;
+              }
+
+              .location-title{
+                  align-self: center;
+                  grid-column: 2 / 4;
+              }
+              }
 
           
            
@@ -1202,7 +1214,7 @@ a{
 .section-networks {
   
   position: relative;
-  background-color: #196fc2;;
+  background-color: #666;
   max-width: 100%;
   margin:0%;
   text-align: center;
@@ -1222,7 +1234,7 @@ a{
 .social-rectangle{
   
   display: inline-block;
-  background-color: #196fc2;
+//  background-color: #666;
   width: 3em;
   height:  3em;
   border: 0.05em solid #ffffff;
@@ -1239,7 +1251,7 @@ a{
    margin-top: 2.3em;
    margin-left:.5em;
    margin-right: .5em;
-  
+   border:none;
    color: #ffffff;
    box-shadow: none;
    -webkit-transition: color 0.5s ease-in-out;
@@ -1256,10 +1268,10 @@ a{
    }
 
    &:hover{
-     
-          background-color: #ffffff;
-          color: #196fc2;
-          border-color: #196fc2;
+      background-color: none;
+        //  background-color: #ffffff;
+          color: #666;
+          border-color: #666;
        
    }
 
@@ -1317,7 +1329,7 @@ a{
            text-transform: uppercase;
 
            &:hover{
-           color: #196fc2;
+           color: #666;
            }
         }
       }
@@ -1338,11 +1350,11 @@ a{
         height: 40px;
         background-color: #000;
         border: none;
-        color: #ffffff;
+        color: 	#FFD700;
         box-shadow: none;
         -webkit-transition: background-color 0.2s ease-out;
         &:hover {
-          background-color: #196fc2;
+          background-color: #666;
          
           color: #ffffff;
         }
@@ -1386,7 +1398,7 @@ a{
             text-decoration: none;
 
            &:hover{
-           color: #196fc2;
+           color: #666;
            }
       }
     }
@@ -1410,7 +1422,7 @@ a{
    
   .nav-bar{
     width: 100%;
-    background-color: #196fc2;
+    background-color: #666;
     top: 0%;
     left: 0%;
     right:0%;
