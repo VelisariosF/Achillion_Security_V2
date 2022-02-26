@@ -1,7 +1,7 @@
 .section-our-company {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "subtitle" "description-container";
+      grid-template-areas: "header" "subtitle" "description-container";
   padding-bottom: 30%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
