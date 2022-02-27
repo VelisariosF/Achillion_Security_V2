@@ -105,7 +105,6 @@ body {
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element .carousel-img {
-  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
@@ -147,18 +146,21 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/cameras.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/cameras.jpg");
   background-size: cover;
+  background-position: 70% 50%;
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element-2 .carousel-img-2 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/security_guard.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/security_guard.jpg");
   background-size: cover;
+  background-position: 30% 50%;
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element-3 .carousel-img-3 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/earth.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/earth.jpg");
   background-size: cover;
+  background-position: 90% 50%;
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element[data-active] {
@@ -199,7 +201,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 100%;
+  width: 100%;
   padding-bottom: 2%;
   margin: 0%;
   padding-top: 4.7em;
@@ -245,7 +247,7 @@ a {
 
 .services-section .services-description-container {
   grid-area: "description-container";
-  width: 100%;
+  max-width: 100%;
   margin: 0%;
   padding: 0%;
 }
@@ -254,8 +256,7 @@ a {
   height: 25em;
   overflow: hidden;
   position: relative;
-  border-radius: 5px;
-  background: #fff;
+  max-width: 100vw;
 }
 
 .services-section .services-description-container .carousel .slider {
@@ -270,7 +271,7 @@ a {
   transition: all 0.3s;
 }
 
-.services-section .services-description-container .carousel .slider section {
+.services-section .services-description-container .carousel .slider .service_container_section {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   -webkit-box-pack: center;
@@ -284,12 +285,14 @@ a {
   display: flex;
   padding: 2em;
   font-size: 20px;
-  width: 33.3333%;
+  width: 100vw;
+  background-position: 10% 30%;
 }
 
-.services-section .services-description-container .carousel .slider section .service {
+.services-section .services-description-container .carousel .slider .service_container_section .service {
   display: -ms-grid;
   display: grid;
+  background: transparent;
   -ms-grid-columns: (auto)[3];
       grid-template-columns: repeat(3, auto);
   -ms-grid-rows: 0.9fr 3fr;
@@ -299,7 +302,7 @@ a {
   height: 100%;
 }
 
-.services-section .services-description-container .carousel .slider section .service .service_logo {
+.services-section .services-description-container .carousel .slider .service_container_section .service .service_logo {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -314,7 +317,7 @@ a {
   grid-row: 2 / 3;
 }
 
-.services-section .services-description-container .carousel .slider section .service .service_logo .rectangle {
+.services-section .services-description-container .carousel .slider .service_container_section .service .service_logo .rectangle {
   display: inline-block;
   background-color: #e0dede;
   width: 3.5em;
@@ -330,7 +333,7 @@ a {
   box-shadow: 0.4em 0.4em 0px 0px #424242;
 }
 
-.services-section .services-description-container .carousel .slider section .service .service_logo .rectangle .service_svg {
+.services-section .services-description-container .carousel .slider .service_container_section .service .service_logo .rectangle .service_svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -342,7 +345,7 @@ a {
   -ms-transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.services-section .services-description-container .carousel .slider section .service .service-title {
+.services-section .services-description-container .carousel .slider .service_container_section .service .service-title {
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-grid-column: 1;
@@ -351,12 +354,13 @@ a {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
+  color: #fff;
   margin: 0;
   text-transform: uppercase;
   font-family: 1em "Open Sans", sans-serif;
 }
 
-.services-section .services-description-container .carousel .slider section .service .service-container-text {
+.services-section .services-description-container .carousel .slider .service_container_section .service .service-container-text {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
@@ -365,17 +369,39 @@ a {
   grid-row: 2 / 3;
   width: 90%;
   margin: 0;
+  color: #fff;
   font-size: small;
   text-align: left;
 }
 
-.services-section .services-description-container .carousel .slider section .service .more_link {
-  color: #000;
+.services-section .services-description-container .carousel .slider .service_container_section .service .more_link {
+  color: #fff;
   -webkit-transition: background-color 0.2s ease-out;
 }
 
-.services-section .services-description-container .carousel .slider section .service .more_link:hover {
+.services-section .services-description-container .carousel .slider .service_container_section .service .more_link:hover {
   color: #416be4;
+}
+
+.services-section .services-description-container .carousel .slider .service_container_section_1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/trailer.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/trailer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-section .services-description-container .carousel .slider .service_container_section_2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/wedding.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/wedding.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-section .services-description-container .carousel .slider .service_container_section_3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/password.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/password.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services-section .services-description-container .carousel .control .arrow {
@@ -383,6 +409,7 @@ a {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  color: white;
   cursor: pointer;
 }
 
@@ -393,11 +420,11 @@ a {
 }
 
 .services-section .services-description-container .carousel .control .left {
-  left: 10px;
+  left: 3%;
 }
 
 .services-section .services-description-container .carousel .control .right {
-  right: 10px;
+  right: 3%;
 }
 
 /****   CONTACT SECTION *****/
@@ -410,6 +437,7 @@ a {
           justify-content: center;
   -ms-grid-rows: 5em 5em 25em;
       grid-template-rows: 5em 5em 25em;
+  height: 90vh;
   padding: 10%;
   max-width: 100%;
   padding-top: 2%;
@@ -458,10 +486,10 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 100%;
   height: 100%;
   gap: 2em;
@@ -509,7 +537,7 @@ a {
 }
 
 .contact-section .contact-form-container .row_3 {
-  width: 220%;
+  width: 100%;
 }
 
 .contact-section .contact-form-container .row_3 .form-subject .form-input-subject {
@@ -568,79 +596,6 @@ a {
 
 .contact-section .contact-form-container .row_3 .form-submit .input-submit:hover {
   background-color: #717972;
-}
-
-/** INFO SECTION **/
-.info-section {
-  border: 2px solid black;
-  margin-top: 20rem;
-  margin-bottom: 20rem;
-  display: -ms-grid;
-  display: grid;
-  /* grid-template-rows: repeat(3, minmax(50%, auto));*/
-      grid-template-areas: "header" "grid_1" "grid_2";
-  row-gap: 2em;
-}
-
-.info-section .info-section-main-title {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  grid-area: "header";
-  font-family: "Varela", sans-serif;
-  color: #666;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 0%;
-  margin: 0%;
-}
-
-.info-section .info-section-container-posts {
-  grid-area: "grid_1";
-  padding: 0%;
-  margin: 0%;
-}
-
-.info-section .info-section-container-about_us {
-  grid-area: "grid_2";
-  max-width: 100%;
-  padding: 0%;
-  margin: 0%;
-}
-
-.info-section .info-section-container {
-  border: 2px solid #e41717;
-  display: -ms-grid;
-  display: grid;
-  row-gap: 2em;
-      grid-template-areas: "title" "content";
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  max-width: 100%;
-  height: auto;
-  padding: 5%;
-}
-
-.info-section .info-section-container .info-section-container-title {
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-  grid-area: "title";
-  margin: 0%;
-  text-transform: uppercase;
-  font-family: 0.1em "Open Sans", sans-serif;
-}
-
-.info-section .info-section-container .info-section-container-content {
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-  grid-area: "content";
-  margin: 0;
-  border-bottom: 0.5px solid #666;
 }
 
 /** WHY CHOOSE SECTION **/
@@ -879,7 +834,7 @@ a {
 .section-about-us .about-us-container .background-title {
   position: relative;
   left: 4%;
-  max-width: 96%;
+  max-width: 90%;
   font-family: "Varela", sans-serif;
   color: #ffffff;
   text-decoration: underline;
@@ -915,6 +870,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 35vh;
   max-width: 100%;
   padding-bottom: 2%;
   margin: 0%;
@@ -1274,6 +1230,9 @@ a {
   .nav-bar svg.menu {
     display: none;
     margin: 0;
+  }
+  .services-section.services-description-container.carousel.slider.service_container_section_1 {
+    background-position: 10% 30%;
   }
   .contact-section .contact-form-container {
     display: -ms-grid;
