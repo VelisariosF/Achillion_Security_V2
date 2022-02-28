@@ -293,8 +293,8 @@ a {
   display: -ms-grid;
   display: grid;
   background: transparent;
-  -ms-grid-columns: (auto)[3];
-      grid-template-columns: repeat(3, auto);
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
   -ms-grid-rows: 0.9fr 3fr;
       grid-template-rows: 0.9fr 3fr;
   row-gap: 5%;
@@ -303,9 +303,8 @@ a {
 }
 
 .services-section .services-description-container .carousel .slider .service_container_section .service .service_logo {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -367,6 +366,8 @@ a {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
   width: 90%;
   margin: 0;
   color: #fff;
@@ -1250,6 +1251,9 @@ a {
   }
   .contact-section .contact-form-container .row_2 .form-phone {
     grid-area: "phone";
+  }
+  .contact-section .contact-form-container .row_3 {
+    width: 220%;
   }
   .contact-section .contact-form-container .row_3 .form-subject {
     -ms-grid-column-align: stretch;
