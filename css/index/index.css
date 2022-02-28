@@ -25,12 +25,21 @@ body {
 }
 
 .nav-bar .logo {
+  background-image: url("/images/Achillion_logo.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 15em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   cursor: pointer;
-}
-
-.nav-bar .logo:hover span {
-  -webkit-transition: color 0.5s ease-out;
-  color: #c29519;
 }
 
 .nav-bar nav {

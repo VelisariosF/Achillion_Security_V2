@@ -29,15 +29,20 @@ body{
   position: fixed;
 
   .logo{
+    background-image: url("/images/Achillion_logo.jpg");
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:15em;
+   
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
     cursor: pointer;
    
-    &:hover{
-    
-      span{
-        -webkit-transition: color 0.5s ease-out;
-        color: #c29519;
-      }
-    }
+   
   }
   nav{ 
      position: fixed;
