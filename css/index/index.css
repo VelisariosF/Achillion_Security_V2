@@ -107,12 +107,13 @@ body {
 .hero-carousel-section .slide-show-container .slide-show-element .carousel-img {
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   width: 100%;
   height: 100%;
-  /*   animation-name: fade;
+  /* animation-name: fade;
             animation-timing-function: ease-in-out;
             animation-iteration-count: infinite;
-            animation-duration: 2s;
+            animation-duration: 1s;
             animation-direction: alternate;*/
 }
 
@@ -1231,6 +1232,9 @@ a {
   .nav-bar svg.menu {
     display: none;
     margin: 0;
+  }
+  .hero-carousel-section.slide-show-container.slide-show-element.carousel-img {
+    background-position-y: 20%;
   }
   .services-section.services-description-container.carousel.slider.service_container_section_1 {
     background-position: 10% 30%;

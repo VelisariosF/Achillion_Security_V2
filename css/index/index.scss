@@ -120,13 +120,14 @@ body{
            
             background-repeat: no-repeat;
             background-attachment:fixed;
+            background-size: cover;
             width: 100%;
             height: 100%;
-          
-         /*   animation-name: fade;
+            
+           /* animation-name: fade;
             animation-timing-function: ease-in-out;
             animation-iteration-count: infinite;
-            animation-duration: 2s;
+            animation-duration: 1s;
             animation-direction: alternate;*/
             
          }
@@ -1395,6 +1396,12 @@ a{
     }
   }
 
+
+  
+
+.hero-carousel-section.slide-show-container.slide-show-element.carousel-img{
+  background-position-y: 20%;
+}
 
   //service section
 
