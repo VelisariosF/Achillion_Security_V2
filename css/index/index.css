@@ -7,7 +7,7 @@ body {
 }
 
 .nav-bar {
-  background-color: #301800;
+  background-color: #1A1A1A;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +35,7 @@ body {
 .nav-bar .logo-container img {
   margin: 0%;
   width: 10em;
-  height: 3.4em;
+  height: 3.67em;
   -o-object-fit: cover;
      object-fit: cover;
   position: fixed;
@@ -49,7 +49,7 @@ body {
   top: 0;
   height: 100vh;
   width: 60%;
-  background-color: #331900;
+  background-color: #1A1A1A;
   -webkit-transition: -webkit-transform .5s ease-in-out;
   transition: -webkit-transform .5s ease-in-out;
   transition: transform .5s ease-in-out;
@@ -73,7 +73,7 @@ body {
 }
 
 .nav-bar nav ul a:hover {
-  color: #000000;
+  color: #CCA33D;
 }
 
 .nav-bar nav svg.close {
@@ -120,11 +120,16 @@ body {
   background-size: cover;
   width: 100%;
   height: 100%;
-  /* animation-name: fade;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-            animation-duration: 1s;
-            animation-direction: alternate;*/
+  -webkit-animation-name: scroll_right;
+          animation-name: scroll_right;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element .carousel-title {
@@ -235,7 +240,7 @@ a {
   font-family: "Varela", sans-serif;
   -ms-grid-column-align: center;
       justify-self: center;
-  color: #666;
+  color: #1A1A1A;
   letter-spacing: 0.3em;
   border-bottom: 1px solid #666;
   width: auto;
@@ -386,15 +391,6 @@ a {
   text-align: left;
 }
 
-.services-section .services-description-container .carousel .slider .service_container_section .service .more_link {
-  color: #fff;
-  -webkit-transition: background-color 0.2s ease-out;
-}
-
-.services-section .services-description-container .carousel .slider .service_container_section .service .more_link:hover {
-  color: #416be4;
-}
-
 .services-section .services-description-container .carousel .slider .service_container_section_1 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/trailer.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/trailer.jpg");
@@ -416,13 +412,27 @@ a {
   background-size: cover;
 }
 
+.services-section .services-description-container .carousel .slider .service_container_section_3 .more_link {
+  color: #fff;
+  -webkit-transition: color 0.3s ease-out;
+}
+
+.services-section .services-description-container .carousel .slider .service_container_section_3 .more_link:hover {
+  color: #CCA33D;
+}
+
 .services-section .services-description-container .carousel .control .arrow {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: white;
+  -webkit-transition: color 0.3s ease-out;
   cursor: pointer;
+}
+
+.services-section .services-description-container .carousel .control .arrow:hover {
+  color: #CCA33D;
 }
 
 .services-section .services-description-container .carousel .control .left .right i {
@@ -464,7 +474,7 @@ a {
   -ms-grid-column-align: center;
       justify-self: center;
   font-family: "Varela", sans-serif;
-  color: #666;
+  color: #1A1A1A;
   width: 100;
   height: 2em;
   margin-bottom: 0em;
@@ -521,7 +531,7 @@ a {
 .contact-section .contact-form-container .row .form-attribute .form-input {
   width: 98.5%;
   border: none;
-  border-bottom: 1px  solid #666;
+  border-bottom: 1px  solid #CCA33D;
 }
 
 .contact-section .contact-form-container .row .form-attribute .form-input:focus {
@@ -557,7 +567,7 @@ a {
           box-sizing: border-box;
   border: none;
   resize: none;
-  border-bottom: 1px  solid #666;
+  border-bottom: 1px  solid #CCA33D;
   width: 100%;
   height: auto;
 }
@@ -591,7 +601,7 @@ a {
 }
 
 .contact-section .contact-form-container .row_3 .form-submit .input-submit {
-  background-color: #666;
+  background-color: #CCA33D;
   -webkit-transition: background-color 0.2s ease-out;
   border: none;
   width: 100%;
@@ -707,7 +717,7 @@ a {
   width: 16px;
   height: 10px;
   position: absolute;
-  background: #FFD700;
+  background: #CCA33D;
   z-index: 5;
   left: 0;
   right: 0;
@@ -718,7 +728,7 @@ a {
 }
 
 .why-choose-achillion-section .reasons-container .timeline .hexa:before {
-  border-bottom: 4px solid	#FFD700;
+  border-bottom: 4px solid	#CCA33D;
   border-left-width: 8px;
   border-right-width: 8px;
   top: -4px;
@@ -727,7 +737,7 @@ a {
 .why-choose-achillion-section .reasons-container .timeline .hexa:after {
   border-left-width: 8px;
   border-right-width: 8px;
-  border-top: 4px solid 	#FFD700;
+  border-top: 4px solid 	#CCA33D;
   bottom: -4px;
 }
 
@@ -798,7 +808,7 @@ a {
 }
 
 .why-choose-achillion-section .reasons-container .time {
-  background: #FFD700;
+  background: #CCA33D;
   display: inline-block;
   padding: 8px;
 }
@@ -870,7 +880,7 @@ a {
 }
 
 .section-about-us .about-us-container .about_us_link:hover {
-  color: #666;
+  color: #CCA33D;
 }
 
 /** INFO SECTION **/
@@ -893,7 +903,7 @@ a {
   -ms-grid-column-align: center;
       justify-self: center;
   font-family: "Varela", sans-serif;
-  color: #666;
+  color: #1A1A1A;
   width: auto;
   height: 2em;
   margin-bottom: 0em;
@@ -1043,7 +1053,7 @@ a {
 /* Section: Social Networks */
 .section-networks {
   position: relative;
-  background-color: #666;
+  background-color: #1A1A1A;
   max-width: 100%;
   margin: 0%;
   text-align: center;
@@ -1095,7 +1105,7 @@ a {
 
 .section-networks .social-container .social-rectangle:hover {
   background-color: none;
-  color: #FFD700;
+  color: #CCA33D;
   border-color: #666;
 }
 
@@ -1130,12 +1140,12 @@ a {
 .site-footer .container-fluid .list-unstyled li a {
   -webkit-transition: background-color 0.5s ease-out;
   font-size: 12px;
-  color: #666;
+  color: #1A1A1A;
   text-transform: uppercase;
 }
 
 .site-footer .container-fluid .list-unstyled li a:hover {
-  color: #FFD700;
+  color: #CCA33D;
 }
 
 .site-footer .container-fluid .top-button .top-rectangle {
@@ -1150,7 +1160,7 @@ a {
   height: 40px;
   background-color: #000;
   border: none;
-  color: #FFD700;
+  color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transition: background-color 0.2s ease-out;
@@ -1158,7 +1168,7 @@ a {
 
 .site-footer .container-fluid .top-button .top-rectangle:hover {
   background-color: #666;
-  color: #ffffff;
+  color: #CCA33D;
 }
 
 .site-footer .container-fluid .top-button .top-rectangle i {
@@ -1180,20 +1190,20 @@ a {
 .site-footer .container-copyright .copyright {
   margin-bottom: 0;
   font-size: 12px;
-  color: #666;
+  color: #1A1A1A;
   text-transform: uppercase;
 }
 
 .site-footer .container-copyright .copyright a {
   -webkit-transition: background-color 0.2s ease-out;
   font-size: 12px;
-  color: #666;
+  color: #1A1A1A;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .site-footer .container-copyright .copyright a:hover {
-  color: #666;
+  color: #CCA33D;
 }
 
 .close-nav {
@@ -1214,6 +1224,9 @@ a {
     left: 0%;
     right: 0%;
     padding: 1rem;
+  }
+  .nav-bar .logo-container img {
+    height: 4.032em;
   }
   .nav-bar nav {
     -webkit-transform: translateX(0);
@@ -1468,6 +1481,28 @@ a {
   }
   to {
     left: 200px;
+  }
+}
+
+@-webkit-keyframes scroll_right {
+  from {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes scroll_right {
+  from {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 /*# sourceMappingURL=index.css.map */

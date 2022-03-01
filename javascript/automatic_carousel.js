@@ -10,5 +10,5 @@ function showSlides() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.opacity = 1;  
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
