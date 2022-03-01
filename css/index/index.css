@@ -7,7 +7,7 @@ body {
 }
 
 .nav-bar {
-  background-color: #666;
+  background-color: #301800;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,22 +24,23 @@ body {
   position: fixed;
 }
 
-.nav-bar .logo {
-  background-image: url("/images/Achillion_logo.jpg");
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.nav-bar .logo-container {
   height: 100%;
+  z-index: 111;
   width: 15em;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  position: relative;
   cursor: pointer;
+}
+
+.nav-bar .logo-container img {
+  margin: 0%;
+  width: 10em;
+  height: 3.4em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  top: 0%;
+  left: 0%;
 }
 
 .nav-bar nav {
@@ -48,7 +49,7 @@ body {
   top: 0;
   height: 100vh;
   width: 60%;
-  background-color: #666;
+  background-color: #331900;
   -webkit-transition: -webkit-transform .5s ease-in-out;
   transition: -webkit-transform .5s ease-in-out;
   transition: transform .5s ease-in-out;
@@ -1094,7 +1095,7 @@ a {
 
 .section-networks .social-container .social-rectangle:hover {
   background-color: none;
-  color: #666;
+  color: #FFD700;
   border-color: #666;
 }
 
@@ -1134,7 +1135,7 @@ a {
 }
 
 .site-footer .container-fluid .list-unstyled li a:hover {
-  color: #666;
+  color: #FFD700;
 }
 
 .site-footer .container-fluid .top-button .top-rectangle {
@@ -1208,7 +1209,7 @@ a {
 @media only screen and (min-width: 900px) {
   .nav-bar {
     width: 100%;
-    background-color: #666;
+    background-color: #1A1A1A;
     top: 0%;
     left: 0%;
     right: 0%;

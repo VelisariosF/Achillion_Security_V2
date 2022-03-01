@@ -15,7 +15,7 @@ body{
 
  
 .nav-bar{
-  background-color: #666;;
+  background-color: #301800;
   width: 100%;
   display: flex;
   margin: 0%;
@@ -28,19 +28,23 @@ body{
   
   position: fixed;
 
-  .logo{
-    background-image: url("/images/Achillion_logo.jpg");
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .logo-container{
     height: 100%;
+    z-index: 111;
     width:15em;
-   
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    position: relative;
    
     cursor: pointer;
+
+    img{
+      margin: 0%;
+      width: 10em;
+      height: 3.4em;
+      object-fit: cover;
+      position: fixed;
+      top: 0%;
+      left: 0%;
+    }
    
    
   }
@@ -50,7 +54,7 @@ body{
      top: 0;
      height: 100vh;
      width: 60%;
-     background-color: #666;
+     background-color: #331900  ;
     
      //transform:translateX(100%);
      transition: transform .5s ease-in-out;
@@ -1213,7 +1217,7 @@ a{
    &:hover{
       background-color: none;
         //  background-color: #ffffff;
-          color: #666;
+          color: #FFD700  ;
           border-color: #666;
        
    }
@@ -1272,7 +1276,7 @@ a{
            text-transform: uppercase;
 
            &:hover{
-           color: #666;
+           color: #FFD700;
            }
         }
       }
@@ -1365,7 +1369,7 @@ a{
    
   .nav-bar{
     width: 100%;
-    background-color: #666;
+    background-color: #1A1A1A;
     top: 0%;
     left: 0%;
     right:0%;
