@@ -92,44 +92,47 @@ body {
 
 .hero-carousel-section {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   margin: 0%;
+  overflow: hidden;
   position: relative;
   inset: 0;
 }
 
 .hero-carousel-section .slide-show-container {
-  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300%;
   height: 100%;
-  position: relative;
+  -webkit-animation: 10s slidy 2;
+          animation: 10s slidy 2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element {
-  display: block;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
+  width: 33.3333%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   inset: 0;
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element .carousel-img {
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
   height: 100%;
-  -webkit-animation-name: scroll_right;
-          animation-name: scroll_right;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element .carousel-title {
@@ -138,6 +141,7 @@ body {
   left: 5em;
   bottom: 5em;
   text-align: left;
+  font-size: .8em;
   text-decoration: underline;
   font-family: "Open Sans", sans-serif;
   -webkit-animation: introload 1s forwards;
@@ -149,11 +153,10 @@ body {
   position: absolute;
   left: 6.2em;
   bottom: 4em;
-  width: 50%;
+  width: 4em;
   text-align: left;
   font-family: "Open Sans", sans-serif;
   font-size: small;
-  opacity: 0;
   -webkit-animation: introload 1s ease-in-out forwards;
           animation: introload 1s ease-in-out forwards;
 }
@@ -162,13 +165,15 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/cameras.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/cameras.jpg");
   background-size: cover;
-  background-position: 70% 50%;
+  background-repeat: no-repeat;
+  background-position: 70% 30%;
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element-2 .carousel-img-2 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/security_guard.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/security_guard.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: 30% 50%;
 }
 
@@ -176,11 +181,8 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/earth.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/earth.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: 90% 50%;
-}
-
-.hero-carousel-section .slide-show-container .slide-show-element[data-active] {
-  opacity: 1;
 }
 
 .hero-carousel-section .slide-show-container .prev_button {
@@ -199,6 +201,19 @@ body {
   right: .5em;
   bottom: 5.6em;
   cursor: pointer;
+}
+
+.hero-carousel-section .hero-section-title {
+  position: absolute;
+  color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 2em;
+  bottom: 5em;
+  text-align: left;
+  font-size: .8em;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -1256,6 +1271,12 @@ a {
     display: none;
     margin: 0;
   }
+  .hero-carousel-section {
+    height: 100vh;
+  }
+  .hero-carousel-section .hero-section-title {
+    font-size: 1.5em;
+  }
   .hero-carousel-section.slide-show-container.slide-show-element.carousel-img {
     background-position-y: 20%;
   }
@@ -1484,25 +1505,41 @@ a {
   }
 }
 
-@-webkit-keyframes scroll_right {
-  from {
-    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+@-webkit-keyframes slidy {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
-  to {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  33% {
+    -webkit-transform: translateX(-33.33%);
+            transform: translateX(-33.33%);
+  }
+  66% {
+    -webkit-transform: translateX(-66.66%);
+            transform: translateX(-66.66%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
-@keyframes scroll_right {
-  from {
-    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+@keyframes slidy {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
-  to {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  33% {
+    -webkit-transform: translateX(-33.33%);
+            transform: translateX(-33.33%);
+  }
+  66% {
+    -webkit-transform: translateX(-66.66%);
+            transform: translateX(-66.66%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 /*# sourceMappingURL=index.css.map */

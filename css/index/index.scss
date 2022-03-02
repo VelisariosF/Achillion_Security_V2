@@ -103,41 +103,46 @@ body{
 
 
 .hero-carousel-section{
+ // border: 2px solid rgb(255, 0, 0);
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   margin: 0%;
-  
+  overflow: hidden;
   position: relative;
   inset: 0;
+ 
   .slide-show-container{
-   
-    max-width: 100%;
+    
+    display: flex;
+    width: 300%;
     height: 100%;
-    position: relative;
+    animation: 10s slidy 2; 
    
-
-
+  
+    transition: all 0.3s;
     .slide-show-element{
-          display: block;
+     // border: 2px solid black;
+     // background-color: #CCA33D;
+      flex-basis: 100%;
+          display: flex;
           height: 100%;
-          width: 100%;
-          position: absolute;
-          z-index: -1;
-          opacity: 0;
+          width: 33.3333%;
+        
+         
+          justify-content: center;
+          align-items: center;
+        
           inset: 0;
          .carousel-img{
            
             background-repeat: no-repeat;
-            background-attachment:fixed;
-            background-size: cover;
+          //  background-attachment:fixed;
+            background-size: contain;
+
             width: 100%;
             height: 100%;
-            
-            animation-name: scroll_right;
-            animation-timing-function: ease-in;
-            animation-iteration-count: infinite;
-            animation-duration: 4s;
-            animation-direction: alternate;
+          
+           
             
          }
           
@@ -149,6 +154,8 @@ body{
             left: 5em;
             bottom: 5em;
             text-align:left;
+           
+            font-size: .8em;
             text-decoration: underline;
             font-family: "Open Sans", sans-serif;
             //opacity: 0;
@@ -161,11 +168,11 @@ body{
             position: absolute;
             left: 6.2em;
             bottom: 4em;
-            width: 50%;
+            width: 4em;
             text-align:left;
             font-family: "Open Sans", sans-serif;
             font-size:small;
-           opacity: 0;
+           
             animation: introload 1s ease-in-out forwards ;
          }
           
@@ -184,7 +191,8 @@ body{
             
           background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("/images/cameras.jpg");
           background-size: cover;
-          background-position: 70% 50%;
+          background-repeat: no-repeat;
+          background-position: 70% 30%;
         }
     }
 
@@ -195,7 +203,8 @@ body{
     
             background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("/images/security_guard.jpg");
             background-size: cover;
-            background-position: 30% 50%;
+          background-repeat: no-repeat;
+          background-position: 30% 50%;
         }
     }
 
@@ -204,13 +213,14 @@ body{
         .carousel-img-3{
            
             background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("/images/earth.jpg");
-            background-size: cover;
-            background-position: 90% 50%;
+           background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 90% 50%;
         }
     }
 
     .slide-show-element[data-active]{
-        opacity: 1;
+      //: 1;
     }
 
     .prev_button{
@@ -235,6 +245,22 @@ body{
 
 
 }
+
+   .hero-section-title{
+     position: absolute;
+     color: white;
+     position: sticky;
+     left: 2em;
+     bottom: 5em;
+     text-align:left;
+    
+     font-size: .8em;
+     text-decoration: none;
+     font-family: "Open Sans", sans-serif;
+     //opacity: 0;
+     //animation: titleShowUp 0.5s ease-in-out forwards;
+  //   animation:introload 1s forwards;
+   }
 
 }
 
@@ -265,7 +291,7 @@ a{
     padding-top: 4.7em;
    
    
-       
+                       
         .services-section-main-title{
            
             grid-area: "header";
@@ -656,7 +682,7 @@ a{
             
             .input-submit{
     
-                background-color: #CCA33D ;
+                background-color: #CCA33D;
                 -webkit-transition: background-color 0.2s ease-out;
                 border: none;
                 width: 100%;
@@ -670,7 +696,7 @@ a{
                 font-size: 1em;
                 margin-right: 1em;
                 cursor: pointer;
-
+            
                 &:hover{
                     background-color: #717972;
                 }
@@ -1414,7 +1440,13 @@ a{
     }
   }
 
+.hero-carousel-section{
+  height: 100vh;
 
+  .hero-section-title{
+    font-size: 1.5em;
+  }
+}
   
 
 .hero-carousel-section.slide-show-container.slide-show-element.carousel-img{
@@ -1676,12 +1708,12 @@ a{
 
 }
 
-@keyframes scroll_right {
-   from{
-    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-   }
-
-   to{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-   }
-}
+@keyframes slidy {
+  0% { transform: translateX(0%); }
+ 
+  33% {  transform: translateX(-33.33%); }
+  
+  66% {  transform: translateX(-66.66%); }
+  
+  100% {  transform: translateX(0%); }
+  }
