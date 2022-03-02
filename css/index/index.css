@@ -1,9 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
-  margin: 0;
   height: 100%;
   width: 100%;
   margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
 }
 
 .nav-bar {
@@ -91,12 +96,14 @@ body {
 }
 
 .hero-carousel-section {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 80vh;
   margin: 0%;
+  padding: 0%;
   overflow: hidden;
   position: relative;
-  inset: 0;
 }
 
 .hero-carousel-section .slide-show-container {
@@ -144,8 +151,6 @@ body {
   font-size: .8em;
   text-decoration: underline;
   font-family: "Open Sans", sans-serif;
-  -webkit-animation: introload 1s forwards;
-          animation: introload 1s forwards;
 }
 
 .hero-carousel-section .slide-show-container .slide-show-element .carousel-subtitle {
@@ -210,11 +215,13 @@ body {
   left: 2em;
   bottom: 5em;
   text-align: left;
-  margin-right: 5%;
   width: 50%;
   font-size: .8em;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
+  opacity: 0;
+  -webkit-animation: introload 2s forwards;
+          animation: introload 2s forwards;
 }
 
 a {
@@ -858,6 +865,7 @@ a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: 50%;
 }
 
 .section-about-us .about-us-container {
@@ -1176,7 +1184,7 @@ a {
   height: 40px;
   background-color: #000;
   border: none;
-  color: #ffffff;
+  color: #CCA33D;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transition: background-color 0.2s ease-out;
@@ -1184,7 +1192,6 @@ a {
 
 .site-footer .container-fluid .top-button .top-rectangle:hover {
   background-color: #666;
-  color: #CCA33D;
 }
 
 .site-footer .container-fluid .top-button .top-rectangle i {

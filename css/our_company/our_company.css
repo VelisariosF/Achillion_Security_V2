@@ -1,4 +1,6 @@
 .section-our-company-page-about-us {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   height: 80vh;
   margin: 0%;
@@ -21,11 +23,19 @@
 }
 
 .section-our-company-page-about-us .our-company-page-about-us-container .background-title {
-  position: relative;
-  left: 4%;
-  max-width: 90%;
-  font-family: "Varela", sans-serif;
+  position: absolute;
+  left: 3em;
+  bottom: 5em;
+  text-align: left;
+  margin-right: 5%;
+  width: 50%;
+  font-size: .8em;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
   color: #ffffff;
+  opacity: 0;
+  -webkit-animation: introload 2s forwards;
+          animation: introload 2s forwards;
 }
 
 .section-our-company-page-about-us .our-company-page-about-us-container .background-text {
@@ -163,6 +173,33 @@
 @media only screen and (min-width: 900px) {
   .section-our-company-page-about-us {
     height: 100vh;
+  }
+  .section-our-company-page-about-us .our-company-page-about-us-container .background-title {
+    font-size: 1.5em;
+  }
+}
+
+@-webkit-keyframes introload {
+  from {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes introload {
+  from {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=our_company.css.map */

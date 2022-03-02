@@ -1,4 +1,6 @@
 .section-services-page-about-us {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   height: 80vh;
   margin: 0%;
@@ -11,7 +13,7 @@
   background-position: 20% 20%;
 }
 
-.section-services-page-about-us .section-services-about-us-container {
+.section-services-page-about-us .section-services-page-about-us-container {
   position: relative;
   top: 4%;
   height: -webkit-fit-content;
@@ -20,9 +22,9 @@
   height: 100%;
 }
 
-.section-services-page-about-us .section-services-about-us-container .background-title {
+.section-services-page-about-us .section-services-page-about-us-container .background-title {
   position: absolute;
-  left: 2em;
+  left: 3em;
   bottom: 5em;
   text-align: left;
   margin-right: 5%;
@@ -31,9 +33,12 @@
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
+  opacity: 0;
+  -webkit-animation: introload 2s forwards;
+          animation: introload 2s forwards;
 }
 
-.section-services-page-about-us .section-services-about-us-container .background-text {
+.section-services-page-about-us .section-services-page-about-us-container .background-text {
   position: relative;
   max-width: 96%;
   left: 4%;
@@ -41,7 +46,7 @@
   color: #ffffff;
 }
 
-.section-services-page-about-us .section-services-about-us-container .about_us_link {
+.section-services-page-about-us .section-services-page-about-us-container .about_us_link {
   position: relative;
   left: 4%;
   max-width: 96%;
@@ -49,7 +54,7 @@
   -webkit-transition: color 0.2s ease-out;
 }
 
-.section-services-page-about-us .section-services-about-us-container .about_us_link:hover {
+.section-services-page-about-us .section-services-page-about-us-container .about_us_link:hover {
   color: #666;
 }
 
@@ -219,8 +224,35 @@
 }
 
 @media only screen and (min-width: 900px) {
-  .section-services-page-page-about-us {
+  .section-services-page-about-us {
     height: 100vh;
+  }
+  .section-services-page-about-us .section-services-page-about-us-container .background-title {
+    font-size: 1.5em;
+  }
+}
+
+@-webkit-keyframes introload {
+  from {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes introload {
+  from {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=services.css.map */
