@@ -429,10 +429,11 @@ a {
 }
 
 .services-section .services-description-container .carousel .slider .service_container_section_3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/password.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/password.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/security_alert.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/security_alert.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 40% 40%;
 }
 
 .services-section .services-description-container .carousel .slider .service_container_section_3 .more_link {
