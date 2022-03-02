@@ -92,7 +92,7 @@ body {
 
 .hero-carousel-section {
   width: 100%;
-  height: 50vh;
+  height: 80vh;
   margin: 0%;
   overflow: hidden;
   position: relative;
@@ -105,8 +105,8 @@ body {
   display: flex;
   width: 300%;
   height: 100%;
-  -webkit-animation: 10s slidy 2;
-          animation: 10s slidy 2;
+  -webkit-animation: 20s slidy infinite;
+          animation: 20s slidy infinite;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -118,7 +118,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  width: 33.3333%;
+  width: 33.3333333%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -206,11 +206,12 @@ body {
 .hero-carousel-section .hero-section-title {
   position: absolute;
   color: white;
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   left: 2em;
   bottom: 5em;
   text-align: left;
+  margin-right: 5%;
+  width: 50%;
   font-size: .8em;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
@@ -1275,6 +1276,7 @@ a {
     height: 100vh;
   }
   .hero-carousel-section .hero-section-title {
+    width: 50%;
     font-size: 1.5em;
   }
   .hero-carousel-section.slide-show-container.slide-show-element.carousel-img {
@@ -1510,11 +1512,23 @@ a {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
+  20% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
   33% {
     -webkit-transform: translateX(-33.33%);
             transform: translateX(-33.33%);
   }
+  50% {
+    -webkit-transform: translateX(-33.33%);
+            transform: translateX(-33.33%);
+  }
   66% {
+    -webkit-transform: translateX(-66.66%);
+            transform: translateX(-66.66%);
+  }
+  85% {
     -webkit-transform: translateX(-66.66%);
             transform: translateX(-66.66%);
   }
@@ -1529,11 +1543,23 @@ a {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
+  20% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
   33% {
     -webkit-transform: translateX(-33.33%);
             transform: translateX(-33.33%);
   }
+  50% {
+    -webkit-transform: translateX(-33.33%);
+            transform: translateX(-33.33%);
+  }
   66% {
+    -webkit-transform: translateX(-66.66%);
+            transform: translateX(-66.66%);
+  }
+  85% {
     -webkit-transform: translateX(-66.66%);
             transform: translateX(-66.66%);
   }

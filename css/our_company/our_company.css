@@ -121,7 +121,6 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
-  background-image: url("/images/camera_sketch.jpg");
   background-size: contain;
 }
 
@@ -159,5 +158,11 @@
   margin: 0;
   font-size: small;
   text-align: left;
+}
+
+@media only screen and (min-width: 900px) {
+  .section-our-company-page-about-us {
+    height: 100vh;
+  }
 }
 /*# sourceMappingURL=our_company.css.map */

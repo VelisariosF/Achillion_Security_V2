@@ -127,7 +127,7 @@
     
         .element-img-2{
          grid-column: 2 / 3;
-         background-image: url("/images/camera_sketch.jpg");
+         //background-image: url("/images/camera_sketch.jpg");
          background-size: contain;
          
         }
@@ -178,6 +178,9 @@
 
 
 @media only screen and(min-width: 900px) {
-   
+    .section-our-company-page-about-us{
+    
+        height: 100vh;
+    }
 //
 }

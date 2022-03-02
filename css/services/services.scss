@@ -1,3 +1,59 @@
+.section-services-page-about-us{
+    max-width: 100%;
+    height: 80vh;
+    margin: 0%;
+    position: relative;
+    
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/images/train_security_guard.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 20% 20%;
+    .section-services-about-us-container{
+        position: relative;
+        top:4%;
+
+        height: fit-content;
+        height:100%;
+        .background-title{
+            position: absolute;
+            left: 2em;
+     bottom: 5em;
+     text-align:left;
+     margin-right: 5%;
+     width: 50%;
+     font-size: .8em;
+     text-decoration: none;
+     font-family: "Open Sans", sans-serif;
+            color: #ffffff;
+           // text-decoration: underline;
+           // text-decoration-thickness: 0.5px;
+
+        }
+        .background-text{
+            position: relative;
+            max-width: 96%;
+            left: 4%;
+            font-family: "Varela", sans-serif;
+            color: #ffffff;
+        }
+        .about_us_link{
+            position: relative;
+            left: 4%;
+            max-width: 96%;
+            
+            font-family: "Varela", sans-serif;
+            -webkit-transition: color 0.2s ease-out;
+           
+            &:hover{
+                color: #666;
+                
+            }
+        }
+    }
+}
+
+
 
 .services-page-section{
     border-top: 1px solid #dddddd;
@@ -205,4 +261,12 @@
   }
   
   
+
+@media only screen and(min-width: 900px) {
+    .section-services-page-page-about-us{
+    
+        height: 100vh;
+    }
+//
+}
   
