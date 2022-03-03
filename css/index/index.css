@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 body {
@@ -38,9 +40,8 @@ body {
 }
 
 .nav-bar .logo-container img {
-  margin: 0%;
   width: 10em;
-  height: 3.67em;
+  height: 5em;
   -o-object-fit: cover;
      object-fit: cover;
   position: fixed;
@@ -53,7 +54,7 @@ body {
   right: 0;
   top: 0;
   height: 100vh;
-  width: 60%;
+  width: 50%;
   background-color: #1A1A1A;
   -webkit-transition: -webkit-transform .5s ease-in-out;
   transition: -webkit-transform .5s ease-in-out;
@@ -74,7 +75,7 @@ body {
   display: block;
   width: 100%;
   font-size: 1em;
-  -webkit-transition: color 0.4s ease-out;
+  -webkit-transition: color 0.3s ease-out;
 }
 
 .nav-bar nav ul a:hover {
@@ -85,6 +86,7 @@ body {
   float: right;
   margin: 1.5em;
   width: 2em;
+  cursor: pointer;
 }
 
 .nav-bar svg.menu {
@@ -429,8 +431,8 @@ a {
 }
 
 .services-section .services-description-container .carousel .slider .service_container_section_3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/security_alert.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/security_alert.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/wall_camera.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/wall_camera.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 40% 40%;
@@ -477,17 +479,13 @@ a {
 .contact-section {
   display: -ms-grid;
   display: grid;
-  padding-bottom: 30%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-rows: 5em 5em 25em;
-      grid-template-rows: 5em 5em 25em;
-  height: 90vh;
-  padding: 10%;
+  -ms-grid-rows: 15% 5% 80%;
+      grid-template-rows: 15% 5% 80%;
+  padding: 15%;
   max-width: 100%;
-  padding-top: 2%;
-  margin: 0%;
   border-bottom: 1px solid #dddddd;
 }
 
@@ -500,15 +498,18 @@ a {
   font-family: "Varela", sans-serif;
   color: #1A1A1A;
   width: 100;
-  height: 2em;
-  margin-bottom: 0em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .contact-section .contact-section-subtitle {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
-  margin-top: 0em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   font-family: "Varela", sans-serif;
   color: #666;
   letter-spacing: 0.3em;
@@ -516,7 +517,6 @@ a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 2em;
   letter-spacing: normal;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -536,8 +536,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 20%;
   max-width: 100%;
-  height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   gap: 2em;
 }
 
@@ -593,7 +596,6 @@ a {
   resize: none;
   border-bottom: 1px  solid #CCA33D;
   width: 100%;
-  height: auto;
 }
 
 .contact-section .contact-form-container .row_3 .form-subject .form-input-subject:focus {
@@ -1113,7 +1115,7 @@ a {
   color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-transition: color 0.5s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
 }
 
 .section-networks .social-container .social-rectangle i {
@@ -1132,6 +1134,10 @@ a {
   background-color: none;
   color: #CCA33D;
   border-color: #666;
+}
+
+.section-networks .social-container .social-rectangle:focus {
+  outline: none;
 }
 
 /* FOOTER
@@ -1163,7 +1169,7 @@ a {
 }
 
 .site-footer .container-fluid .list-unstyled li a {
-  -webkit-transition: background-color 0.5s ease-out;
+  -webkit-transition: color 0.3s ease-out;
   font-size: 12px;
   color: #1A1A1A;
   text-transform: uppercase;
@@ -1219,7 +1225,7 @@ a {
 }
 
 .site-footer .container-copyright .copyright a {
-  -webkit-transition: background-color 0.2s ease-out;
+  -webkit-transition: color 0.3s ease-out;
   font-size: 12px;
   color: #1A1A1A;
   text-transform: uppercase;
@@ -1293,7 +1299,14 @@ a {
   .services-section.services-description-container.carousel.slider.service_container_section_1 {
     background-position: 10% 30%;
   }
+  .contact-section {
+    padding: 2%;
+  }
+  .contact-section .contact-section-subtitle {
+    margin-top: -1.5%;
+  }
   .contact-section .contact-form-container {
+    margin-top: 10%;
     display: -ms-grid;
     display: grid;
         grid-template-areas: "name  lastname " "email phone " "subject subject " "submit submit";
